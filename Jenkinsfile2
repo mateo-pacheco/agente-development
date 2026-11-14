@@ -24,7 +24,7 @@ pipeline {
         }
         stage('Deploy') {
             agent{
-                label 'prod && java'
+                label 'prod && C'
             }
             steps {
              echo "Deploying ... in the node ${NODE_NAME}  and in the executor ${EXECUTOR_NUMBER}"  
