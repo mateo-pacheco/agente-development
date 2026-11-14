@@ -2,13 +2,12 @@ pipeline {
    
     agent{
         node {
-            label 'Development'
+            label 'dev'
         }
     }
     stages {
         stage('Build') {
             steps {
-            
                 echo "Building ... in the node ${NODE_NAME}  and in the executor ${EXECUTOR_NUMBER}"
                 sh 'uname -n'
             }
